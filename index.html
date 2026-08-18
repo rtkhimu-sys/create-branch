@@ -3,9 +3,637 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>ROYAL BREW | Premium Beer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-beer-mug-empty"></i>
+        <span>ROYAL<span>BREW</span></span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+        <button class="icon-btn" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="cart-btn" id="cartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH BOX ================= -->
+<div class="search-box" id="searchBox">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search premium beer..."
+    >
+
+    <button id="closeSearch">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            ESTABLISHED 1897
+        </p>
+
+        <h1>
+            THE ART OF
+            <span>PREMIUM BEER</span>
+        </h1>
+
+        <p class="hero-text">
+            Discover a collection of exceptional beers,
+            carefully crafted for those who appreciate
+            extraordinary taste and timeless quality.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn primary-btn">
+                Explore Collection
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#about" class="btn outline-btn">
+                Our Story
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="circle"></div>
+
+        <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+            alt="Premium Beer"
+        >
+
+        <div class="premium-badge">
+            <span>100%</span>
+            PREMIUM
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+
+    <div class="feature">
+        <i class="fa-solid fa-wheat-awn"></i>
+        <div>
+            <h3>Finest Ingredients</h3>
+            <p>Selected premium ingredients</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-flask"></i>
+        <div>
+            <h3>Expert Brewing</h3>
+            <p>Crafted by master brewers</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-award"></i>
+        <div>
+            <h3>Award Winning</h3>
+            <p>Recognized worldwide</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products-section" id="products">
+
+    <div class="section-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h2>
+            Exceptional <span>Beers</span>
+        </h2>
+
+        <div class="heading-line"></div>
+
+    </div>
+
+
+    <!-- Categories -->
+    <div class="categories">
+
+        <button class="category active" data-category="all">
+            All
+        </button>
+
+        <button class="category" data-category="lager">
+            Lager
+        </button>
+
+        <button class="category" data-category="ale">
+            Ale
+        </button>
+
+        <button class="category" data-category="stout">
+            Stout
+        </button>
+
+        <button class="category" data-category="craft">
+            Craft
+        </button>
+
+    </div>
+
+
+    <!-- Search -->
+    <div class="product-search">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search beer..."
+        >
+
+    </div>
+
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-category="lager">
+
+            <div class="product-image">
+
+                <span class="tag">
+                    BEST SELLER
+                </span>
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="https://images.unsplash.com/photo-1518176258769-f227c798150e?auto=format&fit=crop&w=700&q=85"
+                    alt="Golden Lager"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-type">
+                    PREMIUM LAGER
+                </p>
+
+                <h3>Golden Crown Lager</h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(128)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>$89.00</strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Golden Crown Lager"
+                        data-price="89"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-category="ale">
+
+            <div class="product-image">
+
+                <span class="tag new">
+                    NEW
+                </span>
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=85"
+                    alt="Royal Ale"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-type">
+                    ENGLISH ALE
+                </p>
+
+                <h3>Royal Heritage Ale</h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(96)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>$125.00</strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Royal Heritage Ale"
+                        data-price="125"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-category="stout">
+
+            <div class="product-image">
+
+                <span class="tag">
+                    LIMITED
+                </span>
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="./image/Budwisermagnum.webp"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-type">
+                    IMPERIAL STOUT
+                </p>
+
+                <h3>Black Royal Stout</h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(84)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>$199.00</strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Black Royal Stout"
+                        data-price="199"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-category="craft">
+
+            <div class="product-image">
+
+                <span class="tag new">
+                    CRAFT
+                </span>
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <img
+                    src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?auto=format&fit=crop&w=700&q=85"
+                    alt="Golden Craft Beer"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-type">
+                    ARTISAN CRAFT
+                </p>
+
+                <h3>Golden Artisan Brew</h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(76)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>$149.00</strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Golden Artisan Brew"
+                        data-price="149"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=1000&q=85"
+            alt="Beer Brewing"
+        >
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="small-title">
+            OUR PHILOSOPHY
+        </p>
+
+        <h2>
+            Brewing
+            <span>Perfection</span>
+            Since 1897
+        </h2>
+
+        <p>
+            Royal Brew is dedicated to creating exceptional beer
+            for people who value craftsmanship, quality and
+            unforgettable flavor.
+        </p>
+
+        <p>
+            Every bottle represents years of brewing knowledge,
+            carefully selected ingredients and a passion for
+            creating something truly special.
+        </p>
+
+        <a href="#products" class="btn primary-btn">
+            Discover Our Beers
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+
+    <div>
+
+        <p>JOIN THE ROYAL BREW CLUB</p>
+
+        <h2>
+            Taste Something <span>Extraordinary</span>
+        </h2>
+
+    </div>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+                <i class="fa-solid fa-beer-mug-empty"></i>
+                <span>ROYAL<span>BREW</span></span>
+            </div>
+
+            <p>
+                Premium beer crafted for extraordinary moments.
+            </p>
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <a href="#home">Home</a>
+            <a href="#products">Collection</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Information</h3>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Phnom Penh, Cambodia
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@royalbrew.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +855 12 345 678
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Royal Brew. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART MODAL ================= -->
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-box">
+
+        <button class="close-cart" id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>
+            Your Cart
+        </h2>
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong>
+                $<span id="cartTotal">0</span>
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
